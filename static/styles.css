@@ -1,0 +1,123 @@
+/* main css style sheet for project */
+
+/*  
+
+font-family: 'Pacifico', cursive;
+*/
+
+html {
+    font-size: 100%;
+  }
+  
+  body {
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  header {
+    width: 100%;
+  }
+
+  header h1, header h2, footer h5 {
+    font-family: 'Pacifico', cursive;
+  }
+  
+  main {
+    width: 100%; 
+  }
+  
+  footer {
+    width: 100%;
+  }
+  
+  section {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
+  article {
+    margin: auto;
+  }
+  
+  p {
+    width: 600px;
+    font-size: 2rem;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  h4 {
+    font-size: 2rem;
+  }
+
+  h5 {
+    font-size: 1.8rem;
+  }
+  
+  a {
+    background: #2ecc71;
+    color: #ffffff;
+    text-decoration: none;
+    border-style: solid;
+    border-width: thin;
+    border-color: none;
+    padding: 30px;
+    margin-left: 30%;
+  }
+  
+  .photoFeed article {
+    width: 45%;
+    margin: 2%;
+  }
+  
+  .photoFeed img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .show {
+    display: flex !important;
+    flex-flow: row wrap !important;
+  }
+
+  #alert {
+    /*  */
+  }
+
+@media (max-width: 768px) {
+  .photoFeed article {
+    width: 95%;
+    margin: auto;
+  }
+ }
+
+@media (min-width: 768px) { 
+  .photoFeed article {
+    width: 45%;
+    margin: 2%;
+  }
+ }
+
+@media (min-width: 1200px) { 
+  .photoFeed article {
+    width: 30%;
+    margin: 1%;
+  }
+ }

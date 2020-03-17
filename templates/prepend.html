@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photo booth photo wall</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto&display=swap" rel="stylesheet"> 
+
+    <!-- main project style sheet -->
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='styles.css')}}"
+    />
+
+    <!-- animate css local -->
+    <link rel="stylesheet" href="{{url_for('static', filename='animate.css')}}">
+
+    </head>
+
+    <script defer>
+      function reloadPhotoWall() {
+        location.reload();
+        console.log('Photo wall has been refreshed!'); 
+      }
+      setInterval(reloadPhotoWall, 30000);
+
+    </script>
+    
+  <body>
+    <header class="animated slideInDown">
+
+      <section>
+        <!-- header banner -->
+        <article>
+          <h1>
+            <img src="{{url_for('static', filename='camera-retro-solid.svg')}}" 
+            alt="camera-retro-solid"
+            style="width: 100px; height: auto; vertical-align: middle;">
+            Tiny Photo Booth
+          </h1>
+          
+        </article>
+        <!-- / header banner -->
+      </section>
+
+    </header>
+
+    <main>
+      <section class="photoFeed">
+
